@@ -9,13 +9,13 @@ class Crew extends Model {}
 
 Crew.init({
     name: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        type: DataTypes.STRING, // name must be of type string
+        allowNull: false, // name cannot be null
     },
 }, {
     sequelize, // passing the connection instance
     modelName: 'Crew', // explicitly giving the model name otherwise Sequelize would pluralize it
-    tableName: 'crew', //  explicity giving the tablename proprety so that we make sure it matches the table name within the database
+    tableName: 'crew', //  explicitly giving the tablename proprety so that we make sure it matches the table name within the database
 });
 
 module.exports = Crew;

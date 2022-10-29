@@ -1,0 +1,10 @@
+### getNames
+GET http://localhost:8000/names
+
+### addName
+POST http://localhost:8000/names
+Content-Type: application/json
+
+{
+    "name": 9846
+}

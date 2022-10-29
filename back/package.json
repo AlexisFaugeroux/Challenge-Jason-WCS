@@ -4,8 +4,9 @@
   "description": "Entrance challenge for Wild Code School \"développeur web avancé\"  program",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "import_table": "psql -U jason -d jason -f \"/var/www/html/Challenge-Jason-WCS/back/data/import_table.sql\"",
+    "import_data": "psql -U jason -d jason -f \"/var/www/html/Challenge-Jason-WCS/back/data/import_data.sql\""
   },
   "repository": {
     "type": "git",
