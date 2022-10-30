@@ -3,11 +3,15 @@ require('dotenv').config();
 
 // Require dependencies
 const express = require('express');
+const cors = require('cors');
 const multer = require('multer');
 const router = require('./app/routers/crewRouter.js');
 
 // Create express app
 const app = express();
+
+// Use cross-origin to allow a client from another origin to get ressources from our API
+app.use(cors());
 
 // Express body parser allowing to parse input data in JSON format
 app.use(express.json());
